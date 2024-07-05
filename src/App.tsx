@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-    <Authenticator>
+    <Authenticator socialProviders={['apple', 'amazon', 'google', 'facebook']}>
       {({ signOut }) => (
         <main>
           <h1>My todos</h1>
